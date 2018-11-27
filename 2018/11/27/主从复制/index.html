@@ -5,13 +5,20 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="概述有两台MySQL数据库服务器master和slave，master为主服务器，slave为从服务器，初始状态时两台服务器数据相同，当master数据变化时slave中的数据同步变化，达到备份的目的。 原理Mysql 之间数据复制的基础是二进制日志文件，slave服务器通过一个 I/O线程与master主服务器保持通信，并监控master的二进制日志文件的变化，则会把变化复制到自己的日志中并执行">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/11/27/主从复制/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="概述有两台MySQL数据库服务器master和slave，master为主服务器，slave为从服务器，初始状态时两台服务器数据相同，当master数据变化时slave中的数据同步变化，达到备份的目的。 原理Mysql 之间数据复制的基础是二进制日志文件，slave服务器通过一个 I/O线程与master主服务器保持通信，并监控master的二进制日志文件的变化，则会把变化复制到自己的日志中并执行">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/13377816-0c2c1bb5d98e9a9f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/670">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/13377816-716e09a132b0b1dc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-09-13T08:04:32.972Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="概述有两台MySQL数据库服务器master和slave，master为主服务器，slave为从服务器，初始状态时两台服务器数据相同，当master数据变化时slave中的数据同步变化，达到备份的目的。 原理Mysql 之间数据复制的基础是二进制日志文件，slave服务器通过一个 I/O线程与master主服务器保持通信，并监控master的二进制日志文件的变化，则会把变化复制到自己的日志中并执行">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/13377816-0c2c1bb5d98e9a9f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/670">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -64,9 +71,7 @@
   </div>
 </div>
 
-        <section id="main">
-  
-    <article id="post-主从复制" class="wow slideInRight article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-主从复制" class="wow slideInRight article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/11/27/主从复制/" class="article-date">
   <time class="post-time" datetime="2018-11-27T13:11:29.942Z" itemprop="datePublished">
@@ -127,12 +132,11 @@
     </footer>
   </div>
   
+    
+  
 </article>
 
 
-
-
-  
 
 </section>
         
